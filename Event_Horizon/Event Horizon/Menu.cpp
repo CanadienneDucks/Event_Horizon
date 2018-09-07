@@ -1,11 +1,15 @@
 #include <iostream>
 #include < string>
 #include "Game.h"
+//#include "Player.h"
+//#include "Planet.h"
+
 using namespace std;
 
 void CreateGame() {
 
 	string civName; 
+	string planetName;
 
 	int count = 5; 
 	int input; 
@@ -20,6 +24,8 @@ void CreateGame() {
 
 	cout << "You are the ruler of a new civilization. What is your civilization's name?" << endl;
 	cin >> civName;
+	cout << "The civilation exists on a beautiful planet. What is the name of the planet?" << endl;
+	cin >> planetName;
 	cout << "Your planet has 5 points that can be put into special catagories. Select where you want your points to go." << endl;
 
 	LOOP:while (count > 0) {
@@ -62,8 +68,14 @@ void CreateGame() {
 		}
 
 	}
+		 Planet planet(planetName, metal, food, water, population, wood, diplomacy, amenaties);
+		 Player playerOne(civName, planet);
 
-		 Game();
+		 Game(playerOne);
+
+}
+
+void GameOn(Player player) {
 
 }
 

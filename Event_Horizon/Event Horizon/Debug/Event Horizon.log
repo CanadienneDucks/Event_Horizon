@@ -1,6 +1,22 @@
 ﻿  Game.cpp
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(28): error C3867: 'Player::getPlanets': non-standard syntax; use '&' to create a pointer to member
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(28): error C2446: '<': no conversion from 'int (__thiscall Player::* )(void)' to 'int'
+  c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(28): note: There is no context in which this conversion is possible
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(28): error C2059: syntax error: ';'
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(28): error C2059: syntax error: ')'
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(29): error C2059: syntax error: ';'
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(36): error C2059: syntax error: '}'
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\game.cpp(36): error C2143: syntax error: missing ';' before '}'
+  Player.cpp
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\player.cpp(7): error C3867: 'std::vector<Planet,std::allocator<_Ty>>::cend': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Planet
+          ]
+c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\player.cpp(7): error C2440: 'return': cannot convert from 'std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> (__thiscall std::vector<_Ty,std::allocator<_Ty>>::* )(void) noexcept const' to 'int'
+          with
+          [
+              _Ty=Planet
+          ]
+  c:\users\brad\documents\github\event_horizon\event_horizon\event horizon\player.cpp(7): note: There is no context in which this conversion is possible
   Generating Code...
-  Skipping... (no relevant changes detected)
-  Menu.cpp
-  Event Horizon.vcxproj -> C:\Users\Caleb\Documents\GitHub\Event_Horizon\Event_Horizon\Debug\Event Horizon.exe
-  Event Horizon.vcxproj -> C:\Users\Caleb\Documents\GitHub\Event_Horizon\Event_Horizon\Debug\Event Horizon.pdb (Partial PDB)

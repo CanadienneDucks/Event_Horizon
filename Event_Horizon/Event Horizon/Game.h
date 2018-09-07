@@ -1,1 +1,3 @@
-void Game();
+#include "Player.h"
+
+void Game(Player player);
