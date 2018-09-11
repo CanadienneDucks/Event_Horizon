@@ -1,6 +1,7 @@
-#include "Planet.h"
 #include <string>
 #include <vector>
+#include "Planet.h"
+#include "Timer.h"
 using namespace std;
 
 class Player {
@@ -10,16 +11,16 @@ public:
 		this->planets.push_back(planet);
 	}
 
-	int getPlanets();
+	vector<Planet> getPlanets();
 	void addPlanet(Planet planet);
 
-	int getTotalMetal();
-	int getTotalFood();
-	int getTotalWater();
-	int getTotalWood();
-	int getTotalPop();
-	int getTotalDip();
-	int getTotalAmen();
+	int getTotalMetal(Timer time);
+	int getTotalFood(Timer time);
+	int getTotalWater(Timer time);
+	int getTotalWood(Timer time);
+	int getTotalPop(Timer time);
+	int getTotalDip(Timer time);
+	int getTotalAmen(Timer time);
 private:
 	string civName;
 	vector<Planet> planets;
